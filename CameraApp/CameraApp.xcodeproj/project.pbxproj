@@ -13,6 +13,7 @@
 		AD6F503F2758D4EC00AF104E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6F503E2758D4EC00AF104E /* Assets.xcassets */; };
 		AD6F50422758D4EC00AF104E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6F50402758D4EC00AF104E /* LaunchScreen.storyboard */; };
 		AD6F504A2758E39D00AF104E /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F50492758E39D00AF104E /* PhotoVC.swift */; };
+		AD6F504C2759074700AF104E /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F504B2759074700AF104E /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AD6F50412758D4EC00AF104E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD6F50432758D4EC00AF104E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD6F50492758E39D00AF104E /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
+		AD6F504B2759074700AF104E /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				AD6F50402758D4EC00AF104E /* LaunchScreen.storyboard */,
 				AD6F50432758D4EC00AF104E /* Info.plist */,
 				AD6F50492758E39D00AF104E /* PhotoVC.swift */,
+				AD6F504B2759074700AF104E /* LaunchScreen.swift */,
 			);
 			path = CameraApp;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				AD6F503A2758D4E900AF104E /* LoginVC.swift in Sources */,
 				AD6F50362758D4E900AF104E /* AppDelegate.swift in Sources */,
+				AD6F504C2759074700AF104E /* LaunchScreen.swift in Sources */,
 				AD6F50382758D4E900AF104E /* SceneDelegate.swift in Sources */,
 				AD6F504A2758E39D00AF104E /* PhotoVC.swift in Sources */,
 			);
@@ -281,13 +285,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YLZ5NYW24M;
+				DEVELOPMENT_TEAM = 77XBRR3742;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,13 +313,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YLZ5NYW24M;
+				DEVELOPMENT_TEAM = 77XBRR3742;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
