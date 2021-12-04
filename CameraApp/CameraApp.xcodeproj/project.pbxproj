@@ -348,10 +348,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 77XBRR3742;
+				DEVELOPMENT_TEAM = PHDW6GDN2J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraApp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "allow this app to access camera";
+<<<<<<< HEAD
+=======
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow this App to Access The photo Library";
+>>>>>>> 2c2149bb5752cbd00f3ab5fbb4cb726aec7f721f
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
@@ -363,7 +367,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = .CameraApp;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = CameraApp.;
+>>>>>>> 2c2149bb5752cbd00f3ab5fbb4cb726aec7f721f
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -379,10 +387,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 77XBRR3742;
+				DEVELOPMENT_TEAM = PHDW6GDN2J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraApp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "allow this app to access camera";
+<<<<<<< HEAD
+=======
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow this App to Access The photo Library";
+>>>>>>> 2c2149bb5752cbd00f3ab5fbb4cb726aec7f721f
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
@@ -394,7 +406,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = .CameraApp;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = CameraApp.;
+>>>>>>> 2c2149bb5752cbd00f3ab5fbb4cb726aec7f721f
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

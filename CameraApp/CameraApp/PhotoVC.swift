@@ -14,9 +14,13 @@ class PhotoVC : UIViewController, UIImagePickerControllerDelegate & UINavigation
     let imageView = UIImageView()
     let takeAPicture = UIButton()
     let cameraView = UIImagePickerController()
+<<<<<<< HEAD
     let savePicture = UIButton()
     var passedName = ""
     
+=======
+    let saveAPicture = UIButton(frame: CGRect(x: 90, y: 730, width: 200, height: 40))
+>>>>>>> 2c2149bb5752cbd00f3ab5fbb4cb726aec7f721f
     init(name: String){
         self.passedName = "\(name)'s Photo"
         super.init(nibName: nil, bundle: nil)
@@ -28,9 +32,31 @@ class PhotoVC : UIViewController, UIImagePickerControllerDelegate & UINavigation
     
     override func viewDidLoad() {
         
+<<<<<<< HEAD
         view.backgroundColor = .white
         setupObjects()
         
+=======
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 8
+
+        takeAPicture.backgroundColor = .black
+        takeAPicture.setTitle("Take A Picture", for: .normal)
+        takeAPicture.setTitleColor(UIColor.white, for: .normal)
+        takeAPicture.layer.cornerRadius = 20
+        takeAPicture.addTarget(self, action: #selector(openCamera), for: .touchUpInside)
+        
+        saveAPicture.backgroundColor = .black
+        saveAPicture.setTitle("save  A Picture", for: .normal)
+        saveAPicture.setTitleColor(UIColor.white, for: .normal)
+        saveAPicture.layer.cornerRadius = 20
+        saveAPicture.addTarget(self, action: #selector(save), for: .touchUpInside)
+
+        view.addSubview(name)
+        view.addSubview(takeAPicture)
+        view.addSubview(imageView)
+        view.addSubview(saveAPicture)
+>>>>>>> 2c2149bb5752cbd00f3ab5fbb4cb726aec7f721f
     }
     
     
@@ -60,7 +86,10 @@ class PhotoVC : UIViewController, UIImagePickerControllerDelegate & UINavigation
         }
         UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }
+<<<<<<< HEAD
     
+=======
+>>>>>>> 2c2149bb5752cbd00f3ab5fbb4cb726aec7f721f
     @objc func image(_ imagee: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer){
         if let error = error{
             let ac = UIAlertController(title: "Error while saving", message: error.localizedDescription, preferredStyle: .alert)
@@ -72,6 +101,7 @@ class PhotoVC : UIViewController, UIImagePickerControllerDelegate & UINavigation
             present(ac, animated: true)
         }
     }
+<<<<<<< HEAD
     
     
     func setupObjects(){
@@ -108,4 +138,7 @@ class PhotoVC : UIViewController, UIImagePickerControllerDelegate & UINavigation
         view.addSubview(savePicture)
         
     }
+=======
+
+>>>>>>> 2c2149bb5752cbd00f3ab5fbb4cb726aec7f721f
 }
