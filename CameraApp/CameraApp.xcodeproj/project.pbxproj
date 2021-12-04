@@ -14,9 +14,13 @@
 		AD6F50422758D4EC00AF104E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6F50402758D4EC00AF104E /* LaunchScreen.storyboard */; };
 		AD6F504A2758E39D00AF104E /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F50492758E39D00AF104E /* PhotoVC.swift */; };
 		AD6F504C2759074700AF104E /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F504B2759074700AF104E /* LaunchScreen.swift */; };
+		AD6F5054275BBB8F00AF104E /* camShot.json in Resources */ = {isa = PBXBuildFile; fileRef = AD6F5053275BBB8F00AF104E /* camShot.json */; };
+		F7B2F98102A790D57C491388 /* libPods-CameraApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A118F7339E02A26D51366D /* libPods-CameraApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03A118F7339E02A26D51366D /* libPods-CameraApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CameraApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56AE8F0FF557082AE69376AD /* Pods-CameraApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraApp.debug.xcconfig"; path = "Target Support Files/Pods-CameraApp/Pods-CameraApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AD6F50322758D4E900AF104E /* CameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6F50352758D4E900AF104E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD6F50372758D4E900AF104E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		AD6F50432758D4EC00AF104E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD6F50492758E39D00AF104E /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		AD6F504B2759074700AF104E /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		AD6F5053275BBB8F00AF104E /* camShot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = camShot.json; sourceTree = "<group>"; };
+		C406EEAD807BF32FC01F575E /* Pods-CameraApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraApp.release.xcconfig"; path = "Target Support Files/Pods-CameraApp/Pods-CameraApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B2F98102A790D57C491388 /* libPods-CameraApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E8864A31974BD1F0D8F23A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03A118F7339E02A26D51366D /* libPods-CameraApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD6F50292758D4E900AF104E = {
 			isa = PBXGroup;
 			children = (
 				AD6F50342758D4E900AF104E /* CameraApp */,
 				AD6F50332758D4E900AF104E /* Products */,
+				F01FB88E1D522DF9DAAF5511 /* Pods */,
+				5E8864A31974BD1F0D8F23A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +75,34 @@
 		AD6F50342758D4E900AF104E /* CameraApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD6F5052275BA4DB00AF104E /* Assets */,
 				AD6F50352758D4E900AF104E /* AppDelegate.swift */,
 				AD6F50372758D4E900AF104E /* SceneDelegate.swift */,
 				AD6F50392758D4E900AF104E /* LoginVC.swift */,
-				AD6F503E2758D4EC00AF104E /* Assets.xcassets */,
 				AD6F50402758D4EC00AF104E /* LaunchScreen.storyboard */,
 				AD6F50432758D4EC00AF104E /* Info.plist */,
 				AD6F50492758E39D00AF104E /* PhotoVC.swift */,
 				AD6F504B2759074700AF104E /* LaunchScreen.swift */,
 			);
 			path = CameraApp;
+			sourceTree = "<group>";
+		};
+		AD6F5052275BA4DB00AF104E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AD6F503E2758D4EC00AF104E /* Assets.xcassets */,
+				AD6F5053275BBB8F00AF104E /* camShot.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F01FB88E1D522DF9DAAF5511 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56AE8F0FF557082AE69376AD /* Pods-CameraApp.debug.xcconfig */,
+				C406EEAD807BF32FC01F575E /* Pods-CameraApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD6F50462758D4EC00AF104E /* Build configuration list for PBXNativeTarget "CameraApp" */;
 			buildPhases = (
+				E4FC5FE57E5BA427721667F2 /* [CP] Check Pods Manifest.lock */,
 				AD6F502E2758D4E900AF104E /* Sources */,
 				AD6F502F2758D4E900AF104E /* Frameworks */,
 				AD6F50302758D4E900AF104E /* Resources */,
@@ -129,11 +165,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD6F50422758D4EC00AF104E /* LaunchScreen.storyboard in Resources */,
+				AD6F5054275BBB8F00AF104E /* camShot.json in Resources */,
 				AD6F503F2758D4EC00AF104E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4FC5FE57E5BA427721667F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CameraApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD6F502E2758D4E900AF104E /* Sources */ = {
@@ -280,6 +342,7 @@
 		};
 		AD6F50472758D4EC00AF104E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56AE8F0FF557082AE69376AD /* Pods-CameraApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -288,8 +351,10 @@
 				DEVELOPMENT_TEAM = 77XBRR3742;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "allow this app to access camera";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -298,7 +363,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-.CameraApp";
+				PRODUCT_BUNDLE_IDENTIFIER = .CameraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -308,6 +373,7 @@
 		};
 		AD6F50482758D4EC00AF104E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C406EEAD807BF32FC01F575E /* Pods-CameraApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,8 +382,10 @@
 				DEVELOPMENT_TEAM = 77XBRR3742;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "allow this app to access camera";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -326,7 +394,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-.CameraApp";
+				PRODUCT_BUNDLE_IDENTIFIER = .CameraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

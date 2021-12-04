@@ -1,0 +1,7 @@
+platform :ios, '15.0'
+
+target 'CameraApp' do
+
+  pod 'lottie-ios'
+  
+end
